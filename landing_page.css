@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Calibri;
+}
+
+.blob1 {
+    position: absolute;
+    z-index: -1;
+    left: 0%;
+    top: 0%;
+}
+
+.blob2 {
+    position: absolute;
+    z-index: -1;
+    right: 0%;
+    bottom: 20%;
+}
+
+.bottom_shape {
+    position: absolute;
+    z-index: -1;
+    right: 0%;
+    bottom: 0%;
+}
+
+/* Navigation bar */
+.nav-container {
+    background: rgba(167, 167, 167, 0.14);
+    border: 2px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.25);
+    height: 72px;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    height: 72px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    transform: translate(-150px, 5px);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+.nav-items li {
+    list-style: none;
+    margin-right: 15px;
+    transform: translate(150px, 5px);
+}
+
+.nav-items li a {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 37px;
+    text-decoration: none;
+    width: 136px;
+    height: 42px;
+    border: 2px solid #52A7CC;
+    background: #52A7CC;
+    padding: 2px 30px;
+    transition: 500ms;
+    right: 100%;
+    
+}
+
+.nav-items li a:hover {
+    opacity: 0.7;
+}
+
+.btn_login {
+    color: #4F4F4F;
+    border: 2px solid #52A7CC;
+    background: #ffffff;
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 69px;
+    color: #000000;
+    margin-bottom: 24px;
+    width: 512px;
+}
+
+header p {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 35px;
+    color: #000000;
+    width: 540px;
+    margin-bottom: 30px;
+}
+
+header a {
+    font-weight: 550;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+
+    background: linear-gradient(90deg, #52A7CC 0%, #EE8CAF 106.42%);
+    box-shadow: 6.11952px 6.11952px 18.3586px rgba(0, 0, 0, 0.25);
+    border-radius: 27.5378px;
+    padding: 10px 35px;
+    right: 20%;
+    display: inline-block;
+    transition: 500ms;
+    
+}
+
+header a:hover {
+    opacity: 0.7;
+    transform: scale(0.9, 0.9);
+}
+
+header .hero-image {
+    position: relative;
+    top: 21px;
+    left: 60px;
+}
