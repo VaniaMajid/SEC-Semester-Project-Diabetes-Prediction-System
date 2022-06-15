@@ -1,0 +1,82 @@
+/* navigation items */
+.nav-items {
+    display: flex;
+}
+
+/* home icon */
+.help,
+.profile {
+    margin-right: 1.5rem;
+}
+
+/* navigation items if hover */
+.help :hover,
+.profile :hover {
+    opacity: 0.7;
+}
+
+/* page content */
+.results-container {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    z-index: 999;
+    padding: 60px 32px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.1rem;
+}
+
+/* heading style */
+header {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 73px;
+    text-align: center;
+    color: #52A7CC;
+    width: 100%;
+    margin-top: 0.2rem;
+}
+
+.buttons {
+    margin-top: 0.5rem;
+    display: flex;
+    align-self: center;
+    gap: 1rem;
+
+}
+
+.buttons .recommedations a,
+.buttons .report a {
+    background: linear-gradient(90deg, #52A7CC 0%, #EE8CAF 106.42%);
+    box-shadow: 6.11952px 6.11952px 18.3586px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    transition: 500ms;
+    font-weight: 550;
+    font-size: 25px;
+
+}
+
+.buttons .recommedations a {
+    padding: 0.3rem 1.3rem 0.3rem 1.3rem;
+
+}
+
+.buttons .report a {
+    padding: 0.3rem 2.1rem 0.3rem 2.1rem;
+
+}
+
+.buttons .recommedations a:hover,
+.buttons .report a:hover{
+    opacity: 0.7;
+    transform: scale(0.9, 0.9);
+}

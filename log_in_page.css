@@ -1,0 +1,254 @@
+* {
+    font-family: Calibri;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* blob 1 */
+.blob1 {
+    position: absolute;
+    z-index: -1;
+    left: 0%;
+    top: 0%;
+}
+
+/* blob 2 */
+.blob2 {
+    position: absolute;
+    z-index: -1;
+    right: 0%;
+    bottom: 20%;
+}
+
+/* bottom shape */
+.bottom_shape {
+    position: absolute;
+    z-index: -1;
+    right: 0%;
+    bottom: -3%;
+}
+
+/* Navigation bar */
+.nav-container {
+    background: rgba(167, 167, 167, 0.14);
+    border: 2px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.25);
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo style */
+.logo {
+    display: flex;
+    margin-left: 1rem;
+}
+
+/* home icon */
+.home {
+    margin-right: 1.5rem;
+}
+
+/* home icon on hover */
+.home :hover {
+    opacity: 0.7;
+}
+
+/* page content */
+.content {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    z-index: 999;
+    padding: 60px 32px;
+    width: 370px;
+    transform: translate(-50%, -50%);
+}
+
+/* heading style */
+.content header {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 73px;
+    text-align: center;
+    color: #52A7CC;
+}
+
+/* username and password style */
+.username, .password {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: 3px;
+    margin: 4px 0 4px 0;
+    padding: 0 10px;
+}
+
+/* label style */
+label {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #000000;
+}
+
+/* username and password input */
+.username input .password input {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #3c3c3c;
+}
+
+/* show */
+.show {
+    position: absolute;
+    right: 13px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #3c3c3c;
+    display: none;
+    cursor: pointer;
+
+}
+
+.pass-key:valid~.show {
+    display: block;
+}
+
+/* stay signed and forgot password */
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* stay signed in */
+.staySignIn {
+    text-align: left;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+/* forgot password */
+.pass {
+    text-align: right;
+    margin: 10px 0;
+}
+
+.pass a {
+    color: black;
+    font-size: 15px;
+}
+
+/* forgot password when hover */
+.pass:hover a {
+    color: #52A7CC;
+}
+
+/* log in button */
+.login {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* log in button styling*/
+.login a{
+    
+    background: #52A7CC;
+    box-shadow: 6.11952px 6.11952px 22px rgba(82, 167, 204, 0.35);
+    border-radius: 28px;
+    padding: 0.3rem 1.9rem 0.3rem 1.9rem;
+    border: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    transition: 500ms;
+}
+
+/* log in with */
+.loginWith {
+    font-weight: 300;
+    font-size: 15px;
+    color: #6A6A6A;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* facebook and google */
+.links {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    gap: 0.5rem;
+}
+
+/* facebook input */
+.facebook input[type="submit"]{
+    background: #4B78BA;
+    box-shadow: 6.11952px 6.11952px 18.3586px rgba(238, 140, 175, 0.28);
+    border-radius: 8px;
+    border: none;
+    width: 118px;
+    height: 35px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 500ms;
+}
+
+/* google input */
+.google input[type="submit"]{
+    background: #DB3333;
+    box-shadow: 6.11952px 6.11952px 18.3586px rgba(238, 140, 175, 0.28);
+    border-radius: 8px;
+    border: none;
+    width: 120px;
+    height: 35px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 500ms;
+}
+
+/* log in,facebook ang google when hover */
+.facebook input[type="submit"]:hover, .google input[type="submit"]:hover{
+    opacity: 0.7;
+    transform: scale(0.9, 0.9);
+}
+
+/* log in,facebook ang google when hover */
+.login a:hover{
+    opacity: 0.7;
+    transform: scale(0.9, 0.9);
+}
+
+/* sign up button */
+.signup {
+    text-align: center;
+}
+
+.signup a{
+    color: #52A7CC;
+}
+
+/* sign when hover */
+.signup a:hover{
+    opacity: 0.7;
+}
